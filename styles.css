@@ -41,7 +41,8 @@ body {
 
 .subtitle {
   font-size: 1.25rem;
-  margin-bottom: 0;
+  margin-bottom: 2rem;
+  text-align: center; /* Add this line to center the subtitle text */
 }
 
 .newsletter-form {
