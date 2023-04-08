@@ -13,16 +13,38 @@ body {
   text-align: center;
 }
 
+/* Add this CSS rule to style the content wrapper */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  display: block;
+  width: auto;
+  height: auto;
+}
+
 .title {
   font-size: 3rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
 }
 
 .subtitle {
   font-size: 1.25rem;
-  margin-bottom: 2rem;
+  margin-bottom: 0;
 }
 
 .newsletter-form {
   /* Add any necessary styling for the Mailchimp form */
 }
+

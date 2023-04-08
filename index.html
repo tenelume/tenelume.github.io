@@ -7,11 +7,33 @@
   <title>Tenelume</title>
 </head>
 <body>
-  <div class="container">
-    <h1 class="title">TENELUME</h1>
-    <p class="subtitle">Revolutionising electron microscopy using quantum technology</p>
-    <!-- Replace the following line with the form code from your Mailchimp account -->
-    <div class="newsletter-form">[Insert Mailchimp Form Code Here]</div>
+<!-- Wrap the logo and text elements in a div with class "content" -->
+<div class="content">
+  <div class="logo-container">
+    <img src="tenelume_logo.png" alt="Tenelume Logo" class="logo">
   </div>
+  <h1 class="title">TENELUME</h1>
+  <p class="subtitle">Revolutionising electron microscopy using quantum technology</p>
+  <!-- Replace the following line with the form code from your Mailchimp account -->
+  <div class="newsletter-form">[Insert Mailchimp Form Code Here]</div>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const title = document.querySelector('.title');
+    const logo = document.querySelector('.logo');
+    
+    const titleWidth = title.offsetWidth;
+    const logoWidth = logo.offsetWidth;
+    const logoHeight = logo.offsetHeight;
+    
+    // Calculate the new logo height while maintaining the aspect ratio
+    const newLogoHeight = (titleWidth / logoWidth) * logoHeight;
+    
+    // Set the new logo dimensions
+    logo.style.width = titleWidth + 'px';
+    logo.style.height = newLogoHeight + 'px';
+  });
+</script>
 </body>
 </html>
+
